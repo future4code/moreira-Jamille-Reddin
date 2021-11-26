@@ -2,3 +2,9 @@
 2 - pizza
 3 - hamburguer
 4 - acaraje 
+5 - sushi
+6 - feijão
+7 - sorvete
+8 - pastel
+9 - bolo de morango
+10 - brigadeiro
