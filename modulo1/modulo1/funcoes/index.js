@@ -16,34 +16,76 @@
 
 // 1.
 // a)
+
 const meuNome = "Jamille"
 const minhaIdade = 26
-const moroEm = "Joinville"
-const profissao = "estudante" 
+const ondeMoro = "Curitiba"
+const profissao = "estudante"
 
-function sobreMim(){   }
+function imprimeFrase(){
+console.log(`Eu sou ${meuNome}, tenho ${minhaIdade} anos, moro em ${ondeMoro} e sou ${profissao}`)
 
-console.log(`Eu sou ${meuNome}, tenho ${minhaIdade} anos, moro em ${moroEm} e sou ${profissao}.`)
+}
+
+imprimeFrase()
 
 // b)
 
 const seuNome = "Luiza"
-const suaIdade= 24
-const ondeMora = "Curitiba"
-const suaProfissao = "Atriz"
+const suaIdade = 24
+const ondeMora = "São Paulo"
+const suaProfissao = "atriz"
 
+function suasInformacoes(nome, idade, endereco, trabalho){
+console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${endereco} e sou ${trabalho}`)}
 
-function imprimirFrase(textoTemplate){
-const textoTemplate = `Eu sou ${seuNome}`
+suasInformacoes(seuNome, suaIdade, ondeMora, suaProfissao)
+
+// 2. 
+// a)
+function doisNumeros(numero1, numero2){
+const soma = numero1+numero2
+return soma
+}
+const resultado = doisNumeros(10, 50)
+console.log(resultado)
+
+// b)
+
+function numeroTrueorFalse(number1, number2){
+const compara = number1 >= number2
+return compara
+}
+const verdadeiroFalso = numeroTrueorFalse(25,32)
+console.log(verdadeiroFalso)
+
+// c)
+
+function parOuImpar(umNumero){
+const parOuNao = umNumero % 2 === 0  
+return parOuNao
+
+}
+const resultadoParImpar = parOuImpar(5)
+console.log(resultadoParImpar)
+
+// d)
+
+function frase(umaFraseBonita){
+
+umaFraseBonita = umaFraseBonita.toUpperCase().
+
+return umaFraseBonita
 
 }
 
-console.log(textoTemplate)
+const frase1 = frase("Essa é uma frase bonita e profunda" )
+console.log(frase1)
+
+//por algum motivo meu lenght nao funciona e da undefined. Se eu coloco só o toUpperCase() funciona normalmente.
+
+//3. 
 
 
 
 
-
-
-
- 
