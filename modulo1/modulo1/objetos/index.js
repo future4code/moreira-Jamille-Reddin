@@ -64,7 +64,7 @@ const infosPessoas = {
 function imprimirFrase(){
     console.log([infosPessoas.nome,infosPessoas.nome.length,infosPessoas.idade, infosPessoas.profissao, infosPessoas.profissao.length ])
 }
-imprimirFrase()
+imprimirFrase(infosPessoas)
 
 // 3.
 //a)
@@ -72,9 +72,17 @@ const carrinho = []
     
 // b)
 const frutas = {
-    nome: "Morango",
-    disponibilidade: true
+   frutaVermelha: "Morango", disponibilidade: true,
+   frutaAmarela: "Banana", disponibilidade: false,
+   frutaVerde: "Limão", disponibilidade: true
+   
 }
     
 
 //c) 
+function carrinhoCheio(carrinho=[]){
+    frutaVermelha.push(1)
+    return frutaVermelha
+}
+
+carrinhoCheio()
