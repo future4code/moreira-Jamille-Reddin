@@ -69,5 +69,39 @@ const produtos = [
 console.log(listaDeProdutos)
 
 //b)
+function retornaDesconto (item){
+   const contaDesconto = {nome: item.nome,
+   preco: item.preco - (item.preco * 0.05)}
+   
+   return contaDesconto
+}
+const produtosComDesconto = produtos.map(retornaDesconto)
+console.log(produtosComDesconto)
 
+//c) 
+const listaDeBebidas = produtos.filter((produtos, index, array) => {
+   return produtos.categoria === "Bebidas"
 
+})
+console.log(listaDeBebidas)
+
+// d) 
+function fazUmaLista(produtos){
+   return produtos.nome.includes("Ypê")
+}
+const produtosYpe = produtos.filter(fazUmaLista)
+console.log(produtosYpe)
+
+//e)
+const produtoYpe = (produtos, indice) => {
+   return produtos.nome.includes("Ypê")
+}
+
+const imprimir = (produtos, indice) => {
+   console.log(`Compre ${produtos.nome} por ${produtos.preco}`)
+}
+
+const nomeProdutoYpe = produtos.filter(produtoYpe)
+const nomeDoProduto = nomeProdutoYpe.map(imprimir)
+const precoYpe = produtos.filter(nomeProdutoYpe)
+const valorYpe = precoYpe.map(imprimir)
