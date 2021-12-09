@@ -25,7 +25,19 @@ while(quantosPets === i ){
 
 while(quantosPets > i){
     let nomeDosPets = prompt("Qual o nome do seu pet?")
-         nomeDosPets = quantosPets
-    
-i++
+    i++
+
+
 }
+
+
+
+// 2. 
+
+const arrayOriginal = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+function imprimeArray(){
+    console.log(arrayOriginal)
+}
+
+imprimeArray()
