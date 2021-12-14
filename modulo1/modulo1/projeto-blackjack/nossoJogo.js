@@ -10,3 +10,26 @@
  * 
  * 
  */
+
+console.log("Boas vindas ao jogo de Blackjack!")
+
+if(confirm("Quer iniciar uma nova rodada?")) {
+   rodada()
+} else {
+   console.log("O jogo acabou")
+}
+const carta = comprarCarta(); 
+
+function rodada(){
+   usuario = []
+   computador = []
+   usuario.push(comprarCarta())
+   usuario.push(comprarCarta())
+   computador.push(comprarCarta())
+   computador.push(comprarCarta())
+
+}
+
+
+console.log(usuario.map((item, valor) => `Usuário - cartas ${carta.texto} - pontuação ${carta.valor}`))
+console.log(computador.map((item, valor) => `Computador - cartas ${carta.texto} - pontuação ${carta.valor}`))
