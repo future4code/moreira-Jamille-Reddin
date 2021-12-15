@@ -1,0 +1,18 @@
+
+h1{
+    color: #58692e;
+    border: black
+}
+
+p{
+    color: #58692e;
+}
+
+div{
+    background-color: ivory;
+}
+
+.pagina-funcionarios{
+    background-color: ivory;
+    color: rgba(228, 124, 5, 0.855);
+}

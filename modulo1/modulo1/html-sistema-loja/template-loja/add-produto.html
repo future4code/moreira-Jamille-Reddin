@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adicionar Produto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body style="background-color: ivory;"> 
     <div>
-        <p>Tortinhas parabrisa</p>
+        <p><i><u>Tortinhas Parabrisa</u></i></p>
     </div>
     
     <div>
@@ -16,32 +17,34 @@
         <a href="ctrl-estoque.html">Controle de Estoque</a>
         <a href="add-produto.html">Adicionar Produto</a>
         <a href="funcionarios.html">Funcionários</a>
+        <img src="img/WhatsApp Image 2021-12-15 at 15.16.55.jpeg" width="1345"; height="300">
     </div>
 
     
-    <h2>Adicionar Produto</h2>
+    <h2 style="color: #58692e;">Adicionar Produto</h2>
     <form action="">
         <div>
-            <label for="link-foto">Link para foto: </label>
+            <label for="link-foto" style="color: rgba(228, 124, 5, 0.855);">Link para foto: </label>
             <input type="url" id="link-foto" name="link-foto">
         </div>
         
         <div>
-            <label for="descricao">Descrição do produto: </label>
+            <label for="descricao" style="color: rgba(228, 124, 5, 0.855);">Descrição do produto: </label>
             <!-- Adicione o id apropriado para o input abaixo -->
             <input type="text" id="descricao" name="descrição">
         </div>
         
         <div>
-            <label for="preco">Preço (em R$): </label>
+            <label for="preco" style="color: rgba(228, 124, 5, 0.855);">Preço (em R$): </label>
             <!-- Adicione o id apropriado e o type para receber números abaixo -->
             <input type="number" id="preco" name="preço">
         </div>
         
         <div>
             <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label for= "quantidade">Quantidade disponível: </label>
+            <label for= "quantidade" style="color: rgba(228, 124, 5, 0.855);">Quantidade disponível: </label>
             <input type="text" id="quantidade" name="quantidade">
+        
         </div>
 
         <div class="form-add">
@@ -50,6 +53,19 @@
         </div>
 
     </form>
+
+    <footer style="background-color: #fdd282; color:#bd7b00">
+        <div>
+            <p style="color:#58692e;"> Siga-nos nas redes sociais!</p>
+    
+            <div>
+                <img src="https://image.flaticon.com/icons/png/512/25/25305.png" width="50"; height="50"/>
+                <img src="https://image.flaticon.com/icons/png/512/25/25425.png" width="50"; height="50"/>
+                <img src="https://image.flaticon.com/icons/png/512/8/8800.png" width="50"; height="50" />
+                 <p>Rua dos docinhos, 21 - Cidade Brasileira - Brasil. - CEP 58795218562. </p>
+            </div>
+        </div>
+        </footer>
 
 </body>
 </html>
